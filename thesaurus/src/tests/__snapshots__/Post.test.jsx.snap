@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post component should render correctly 1`] = `
+<div
+  className="post"
+>
+  <p
+    className="title"
+  >
+    title
+  </p>
+  <p
+    className="text"
+  >
+    text
+  </p>
+  <p
+    className="author"
+  >
+    Author: 
+    M
+  </p>
+</div>
+`;

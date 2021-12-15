@@ -1,0 +1,118 @@
+.loginPage{
+  margin:200px auto;
+}
+.authForm{
+  display: flex;
+  height: 300px;
+  width: 350px;
+  flex-direction:column;
+  justify-content: center;
+  align-content: flex-end;
+  margin: auto;
+}
+.authForm p{
+  margin: auto;
+}
+
+.authInput{
+  display: flex;
+  width: 300px;
+  justify-items: center;
+  margin: auto;
+}
+.authButton{
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  border-style: none;
+  border-radius: 5px;
+  background-color: lightskyblue;
+}
+
+form{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+.error{
+  margin: auto;
+}
+.errorNum{
+  font-size: 60px;
+  margin: auto;
+}
+
+.header{
+  width: 100%;
+  height: 60px;
+  background-color: rgba(30, 144, 255, 0.73);
+  display: flex;
+  justify-content: space-between;
+}
+.header p{
+  margin-left: 20px ;
+}
+.header div{
+  display: flex;
+}
+.header  button{
+  margin-right: 20px;
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+}
+
+.user-card{
+  padding-top: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px;
+  border: 1px solid black;
+}
+.user-card button{
+  margin: 3px;
+}
+.card-string{
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.label{
+  display: flex;
+  width: 100%;
+}
+.posts{
+  width: 70%;
+  margin-left: 20px;
+}
+.post{
+  padding: 0 11px;
+  border: 1px solid rgba(30, 144, 255, 0.73);
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 5px ;
+}
+.post .title{
+  color: rgba(30, 144, 255, 0.73);
+  font-size: 150%;
+  margin: 0;
+}
+.post .author{
+  font-size: 80%;
+}
+.cards{
+  width: 20%;
+}
+.user-card input{
+  margin: 5px;
+}
+.user-card textarea{
+  margin: 5px;
+}
