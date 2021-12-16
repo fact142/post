@@ -11,7 +11,7 @@ const SignUp = () =>
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
   const dispatch = useDispatch()
-  const error = useSelector((state) => state.user.error);
+  const error = useSelector((state) => state.user.signUpError);
 
 
   const onSubmit = (e) => {

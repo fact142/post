@@ -60,7 +60,6 @@ class authController{
   }
   async auth(req, res){
     try{
-      setTimeout(res.status(504).json({message: "Long response from server"}))
       const token = req.headers.authorization.split(' ')[1];
       const user = jwt.verify(token, secretKey)
       res.json(user)

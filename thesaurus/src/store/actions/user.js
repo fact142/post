@@ -1,5 +1,5 @@
 import { auth, logIn, signUp, editUser, createPost } from '../../https/userAPI';
-import { setUser, setUserError } from '../reducers/userReducer';
+import { setLoginError, setSignupError, setUser, setUserError } from '../reducers/userReducer';
 import {logOut} from '../reducers/userReducer';
 
 export const authentication = () => async (dispatch) => {
@@ -11,7 +11,7 @@ export const login = (email, password) => async (dispatch) => {
   const data = await logIn(email, password);
   let response;
   if(data.message){
-    dispatch(setUserError(data.message))
+    dispatch(setLoginError(data.message))
   } else{
     if (data.token !== undefined) {
       localStorage.setItem('token', data.token);
@@ -22,7 +22,7 @@ export const login = (email, password) => async (dispatch) => {
 };
 export const signup = (name, lastname, email, password) => async (dispatch) => {
   const data = await signUp(name, lastname, email, password);
-  dispatch(setUserError(data.message))
+  dispatch(setSignupError(data.message))
 };
 
 

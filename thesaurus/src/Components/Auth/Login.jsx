@@ -10,7 +10,7 @@ const Login = () =>
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
   const dispatch = useDispatch()
-  const error = useSelector((state) => state.user.error);
+  const error = useSelector((state) => state.user.loginError);
 
   const onSubmit = (e) => {
     e.preventDefault();
